@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Message Encrypor/ Decryptor | Js Application by Navi Raj</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <div class="modal">
+    <div class="modal-header">
+      <h4 class="modal-header__title">Message <span id="currentMode"></span></h4><button id="switchMode"></button>
+    </div>
+    <div class="modal__body">
+    <div class="note-box"><p class="note">Make sure to 'Select All' while copying the text, sometimes you may miss out the space in the end.<span> App created by Navi Raj</span></p></div>
+    <textarea name="messageArea" cols="30" rows="10" class="messageArea" placeholder="Message" id="messageArea"></textarea>
+    <div class="security"><h3 class="modal__Security-key">Security key - </h3><input type="text" id="securityKey" value="1"></div>
+    <button class="modal__modeBtn" id="cryptBtn"></button>
+    </div>
+  </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

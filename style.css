@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  background-image: url('../img/bg.jpg');
+}
+
+h3, h4, p{
+  margin:0;
+  padding:0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+p span{
+  color: #da4544;
+  font-weight: 700;
+}
+
+.note-box{
+  text-align: left;
+  font-size: 13px;
+  font-style: italic;
+  color: #373737;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+button{
+  border: none;
+  background-color: #da4544;
+  padding: 10px 25px;
+  display:inline-block;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+button:hover{
+  background-color: #aa3333;
+}
+
+main{
+  max-width: 920px;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.modal{
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.modal-header{
+  background-color: #2c3e50;
+  padding:1rem;
+  overflow: hidden;
+}
+
+.modal-header h4{
+  float: left;
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
+
+.modal-header button{
+  float: right;
+  border-radius: 1rem;
+}
+
+.modal__body{
+  padding:1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.modal__body textarea{
+  width: 100%;
+  resize: none;
+  border: 1px solid #2c3e50;
+  padding:1rem;
+  color: #2c3e50;
+}
+
+.modal__body textarea::placeholder{
+  color: #2c3e50;
+}
+
+
+.modal__Security-key{
+  margin: 2rem;
+  display:inline-block;
+}
+
+.modal input#securityKey{
+  padding:10px;
+  max-width: 4rem;
+  border: 1px solid #2c3e50;
+  color: #aa3333;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+.modal__body button{
+  display:inline-block;
+  padding: .875rem 3rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:520px){
+  main{
+    margin: 1rem auto;
+  }
+  }
